@@ -19,14 +19,56 @@ header {
   
 }
 
+.jumbotron {
+  justify-content: center;
+}
+
+.container.main {
+  width: 85%;
+}
+
 .header {
   justify-content: space-between;
   color: white;
   width: 100%;
 }
 
+.col {
+  justify-content: center;
+  align-items: center;
+}
 /* DEBUG */
 
 .card {
-  height: 200PX;
+  height: 300px;
+  background-color: #B5DDFF;
+  width: 100%;
+  margin: 20px;
+}
+
+.card.large { 
+  height: 600px;
+  background-color: #B5DDFF;
+  width: 100%;
+}
+
+.planning {
+  background-color: #9792E4;
+  height: 600px;
+  width: 100%;
+}
+
+.partners {
+ height: 1000px;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
+.profile {
+  height: 300px;
+  width: 80%;
+  max-width: 250px;
+  background-color: #9792E4;
+  margin: 10px;
 }
