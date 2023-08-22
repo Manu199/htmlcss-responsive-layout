@@ -2,40 +2,82 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
 }
+
+
 
 header {
   background-color: #0084FD;
   height: 80px;
   justify-content: center;
+
 }
 
+.logo{
+  width: 80px;
+  height: 40px;
+}
 .flex {
   display: flex;
+
 }
 
 .container {
-  width: 80%;
+  width: 70%;
   
+}
+
+.header {
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header ul {
+  list-style: none;
+
+}
+
+.header ul li{
+  margin: 15px;
+  align-items: center;
+  display: flex;
+}
+
+.header nav ul li.btn{
+  padding: 6px 10px;
+  background-color: white;
+  color: black ;
+  border-radius: 30px;
 }
 
 .jumbotron {
   justify-content: center;
+
+}
+
+.row{
+  justify-content: space-between;
 }
 
 .container.main {
   width: 85%;
+
 }
 
 .header {
   justify-content: space-between;
   color: white;
   width: 100%;
+  display: flex;
+
 }
 
 .col {
   justify-content: center;
   align-items: center;
+
 }
 /* DEBUG */
 
@@ -44,18 +86,21 @@ header {
   background-color: #B5DDFF;
   width: 100%;
   margin: 20px;
+
 }
 
-.card.large { 
+/* .card.large { 
   height: 600px;
   background-color: #B5DDFF;
   width: 100%;
-}
+
+} */
 
 .planning {
   background-color: #9792E4;
   height: 600px;
   width: 100%;
+
 }
 
 .partners {
@@ -63,12 +108,80 @@ header {
  justify-content: center;
  align-items: center;
  flex-direction: column;
+
 }
 
 .profile {
   height: 300px;
   width: 80%;
-  max-width: 250px;
+  /* max-width: 250px; */
   background-color: #9792E4;
   margin: 10px;
+
+}
+
+.benefits {
+  background-color: #9792E4;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.card-benefits {
+  height: 300px;
+  /* width: 100%; */
+  /* max-width: 250px; */
+  background-color: white;
+  margin-top: 30px;
+
+}
+
+@media screen and (min-width: 576px) {
+
+  .main{
+    display: flex;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    width: 1100px;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+  }
+
+  
+
+  .col:first-child {
+    width: 66.666666%;
+    height: 300px;
+  }
+  
+  .col {
+    width: 33.333333%;
+    height: 300px;
+    /* padding-top: 10px; */
+
+  }
+/* 
+  .card{
+    height: 300px;
+    width: 33,3333%;
+    padding: 0;
+    margin: 0;
+    
+  } */
+
+  /* .card.large{
+    height: 300px;
+    width: 600px;
+
+  } */
+
+    /* .col {
+      width: 33%;
+      
+  } */
 }
